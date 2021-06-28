@@ -1,0 +1,38 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+
+.comment-up {
+  display: block;
+  text-align: center;
+  font: var(--comment)
+  /* font-size: 2.1em;
+  line-height: 55px; */
+}
+
+.comment-down {
+  display: block;
+
+ text-align: center;
+ font: var(--headline5);
+}
+
+.comment-arrow {
+ width: 80px;
+ height: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .comment {
+    padding-block-start: 200px;
+    padding-block-end: 200px;
+  }
+  .comment-up {
+    max-width: 900px;
+  }
+}

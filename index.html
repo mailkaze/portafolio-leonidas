@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header-content">
+        <img src="./images/logo.png" alt="logo" width="70" height="20">
+        <nav aria-label="main-navigation" class="menu">
+          <ul>
+            <li>
+              <a class="is-active" href="#main">hola</a>
+            </li>
+            <li>
+              <a href="#Project">Proyectos</a>
+            </li>
+            <li>
+              <a href="#contact">Hablemos</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="button">Curriculum</button>
+      </div>
+    </div>
+    <!-- <button class="button is-secondary">Curriculum</button> -->
+  </header>
+  <div class="wrapper">
+  
+    <section aria-label="main" class="hero" id="main">
+      <div class="hero-image">
+        <img src="./images/user.png" width="338" height="330" alt="">
+      </div>
+      <div class="hero-description">
+        <h1>
+          <span>¡Hola a todos!</span>
+          <span>Soy Jaume</span>
+        </h1>
+        <p>Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
+        <div class="social">
+          <a class="button-icon" href="tel:234243242"><img src="./icons/phone.svg" alt=""></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/mail.svg" alt=""></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/instagram.svg" alt=""></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/twitter.svg" alt=""></a>
+        </div>
+        <a href="#" class="button">Descargar curriculum</a>
+      </div>
+    </section>
+
+    <section class="comment">
+      <span class="comment-up">A lo largo de mi carrera como Frontend, he tenido el privilegio de trabajar en proyectos retadores e increíbles</span>
+      <span class="comment-down">Aquí hay algunos que me gustaría compartir.</span>
+      <img class="comment-arrow" src="./icons/arrow-down.svg" alt="flecha hacia abajo">
+    </section>
+
+    <section class="testimonials">
+      <div class="card">
+        <img src="./images/leo.png" alt="foto Leonidas">
+        <span class="testimonials-up">"Jaume ha sido de gran ayuda para acelerar ciertos esfuerzos de desarrollo. Lo que nos hubiera llevado 6 meses solo les llevó 1,5 meses ".</span>
+        <span class="testimonials-down">LEONIDAS ESTEBAN / COFUNDADOR Y CEO LEONIDASESTEBAN.COM</span>
+      </div>
+    </section>
+
+    <div class="project">
+      <div class="project-image">
+        <img src="./images/leonidas.png" alt="">
+      </div>
+      <div class="project-description">
+        <a class="title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
+        <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+          tus habilidades como desarrollador Front-End.</p>
+          <a target="_blank" href="https://github.com/mailkaze/gsfdg" class="button is-secondary">Ver código</a>
+          <a target="_blank" href="https://leonidasesteban.com" class="button">Ver proyecto</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-image">
+        <img src="./images/marvol.png" alt="">
+      </div>
+      <div class="project-description">
+        <a class="title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
+        <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+          tus habilidades como desarrollador Front-End.</p>
+          <a target="_blank" href="https://github.com/mailkaze/gsfdg" class="button is-secondary">Ver código</a>
+          <a target="_blank" href="https://leonidasesteban.com" class="button">Ver proyecto</a>
+      </div>
+    </div>
+
+    <div class="project" id="project">
+      <div class="project-image">
+        <img src="./images/netnet.png" alt="">
+      </div>
+      <div class="project-description">
+        <a class="title" target="_blank" href="https://leonidasesteban.com">LeonidasEsteban.com</a>
+        <p>Accede a más de 120 proyectos que te ayudarán a mejorar 
+          tus habilidades como desarrollador Front-End.</p>
+          <a target="_blank" href="https://github.com/mailkaze/gsfdg" class="button is-secondary">Ver código</a>
+          <a target="_blank" href="https://leonidasesteban.com" class="button">Ver proyecto</a>
+      </div>
+    </div>
+
+    <form action="https://formspree.io/f/xjvjowez" method="POST" class="form" id="form">
+      <div class="form-content">
+        <h2 class="title">Hablemos</h2>
+        <p>
+          Si está interesado en trabajar conmigo en su próximo proyecto, no dude en ponerse en contacto conmigo.
+        </p>
+        <label for="form-name">
+          Nombre completo
+          <input required name="name" id="form-name" type="text" placeholder="Juan" name="" id="">
+        </label>
+        <label for="form-email">
+          Correo electrónico
+          <input required name="email" id="form-email" type="email" placeholder="juan@gmail.com" name="" id="">
+        </label>
+        <label for="form-name">
+          Mensaje
+          <textarea required name="message" placeholder="Mensaje" id="" cols="30" rows="7"></textarea>
+        </label>
+        <button type="submit" class="button">Enviar mensaje</button>
+      </div>
+    </form>
+    <!-- <a href="mailto:mailkaze@gmail.com" class="trucazo" id="trucazo">mail</a> -->
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/logo.png" alt="logo" width="70" height="20">
+        </div>
+        <div class="social">
+          <a class="button-icon" href="tel:234243242"><img src="./icons/phone.svg" alt=""></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/mail.svg" alt=""></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/instagram.svg" alt=""></a>
+          <a class="button-icon" href="tel:234243242"><img src="./icons/twitter.svg" alt=""></a>
+        </div>
+        <div class="footer-copyright">
+          <p>Hecho con ❤ de Jaume.</p>
+          <p>
+            Copyright 2021 - Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const $form = document.querySelector('#form')
+    $form.addEventListener('submit', handleSubmit)
+
+    async function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+          'Accept': 'aplication/json'
+        }
+      })
+      if (response.ok) {
+        this.reset() // vaciamos los elementos del promulario
+        alert('Gracias por contactarme, te escribiré pronto :)')
+      }
+    }
+
+
+    // const $form = document.querySelector('#form')
+    // $form.addEventListener('submit', handleSubmit)
+    // const $buttonMailto = document.querySelector(('#trucazo'))
+
+    // function handleSubmit(event) {
+    //   event.preventDefault()
+    //   const form = new FormData(this)
+    //   console.log(form.get('name'))
+    //   $buttonMailto.setAttribute('href', `mailto:mailkaze@gmail.com?subjet=${form.get('name')} ${form.get('email')}&body=${form.get('messaje')}`)
+    //   $buttonMailto.click()
+    // }
+  </script>
+</body>
+</html>

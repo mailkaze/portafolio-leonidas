@@ -1,0 +1,46 @@
+.testimonials {
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+}
+
+.testimonials .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(39.7657px);
+  border-radius: 24px;
+  padding: 24px;
+  position: relative;  
+}
+
+.testimonials .card::before {
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  border-radius:24px; 
+  padding: 4px; 
+  background:linear-gradient(160deg,rgba(256,256,256,0.5) 4%, rgba(256,256,256,0) 28%); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out; 
+  mask-composite: exclude; 
+}
+
+.testimonials img {
+  width: 64px;
+  height: 64px;
+}
+
+.testimonials-up {
+  font: var(--quote);
+}
+
+.testimonials-down {
+  font: var(--caption);
+}
